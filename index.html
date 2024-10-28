@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hope he sees this</title>
+    <meta property="og:title" content="hope he sees this">
+    <meta property="og:description" content="i do">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🙂</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="body-container">
+      <div id="photo-app-title" class="playfair-display"> Photo and video sharing social network</div>
+      <div id="upload" class="photo-styling"><img src="upload.png"/></div>
+      <div id="notification" class="photo-styling"><img src="notification.png"/></div>
+      <div id="message" class="photo-styling"><a href="https://tiffanyq.github.io/hes-just-some-guy"><img src="message.png"/></a></div>
+    </div>
+    <script>
+      function showNotification() {
+        const n = document.getElementById("notification");
+        n.style.display = "block";
+      }
+      function showMessage() {
+        const m = document.getElementById("message");
+        m.style.display = "block";
+      }
+     window.addEventListener("load", function(event) {
+        const upload = document.getElementById("upload");
+        const notification = document.getElementById("notification");
+        upload.addEventListener("click", showNotification, false);
+        notification.addEventListener("click", showMessage, false);
+    });
+    </script>
+  </body>
+</html>
