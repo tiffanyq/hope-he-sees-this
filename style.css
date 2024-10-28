@@ -3,8 +3,6 @@ html {
 }
 
 html, body {
-  overflow-x: hidden;
-  overflow-y: hidden;
   margin: 0;
 }
 
@@ -21,6 +19,7 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
+  padding-bottom: 48px;
 }
 
 #photo-app-title{
